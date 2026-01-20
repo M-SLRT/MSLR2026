@@ -118,7 +118,7 @@ const Hero = () => {
                         className="md:col-span-10 md:col-start-2 text-center px-4 md:px-6 py-4 md:py-8"
                     >
                         <motion.h1 
-                            className="font-oswald text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight"
+                            className="font-exo2 text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight"
                             aria-label={title}
                         >
                             {title.split(" ").map((word, wordIndex) => (
@@ -138,7 +138,7 @@ const Hero = () => {
                         </motion.h1>
 
                         <motion.p
-                            className="font-roboto text-xl sm:text-2xl md:text-3xl mt-4 mb-6 text-brand-neutral-200"
+                            className="font-exo2 text-xl sm:text-2xl md:text-3xl mt-4 mb-6 text-brand-neutral-200"
                             variants={itemVariants}
                         >
                             {subtitle}
@@ -148,10 +148,10 @@ const Hero = () => {
                             variants={itemVariants}
                             className="w-fit mx-auto space-y-1 mb-6 bg-brand-neutral-800 bg-opacity-80 p-4 rounded-xl"
                         >
-                            <p className="w-fit mx-auto text-base sm:text-lg font-sharetech text-brand-accent-light tracking-wider">
+                            <p className="w-fit mx-auto text-base sm:text-lg font-exo2 text-brand-accent-light tracking-wider">
                                 Denver, Colorado, USA
                             </p>
-                            <p className="w-fit mx-auto text-base sm:text-lg font-sharetech text-brand-accent-light tracking-wider">
+                            <p className="w-fit mx-auto text-base sm:text-lg font-exo2 text-brand-accent-light tracking-wider">
                                 October 20th, 2026
                             </p>
                         </motion.div> */}

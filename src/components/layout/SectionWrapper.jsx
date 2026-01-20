@@ -72,7 +72,7 @@ const SectionWrapper = ({
                     <div className="mb-12 md:mb-16 text-center">
                         {subtitle && (
                             <motion.p
-                                className="text-base md:text-lg font-poppins text-brand-accent uppercase tracking-wider mb-2 font-medium"
+                                className="text-base md:text-lg font-exo2 text-brand-accent uppercase tracking-wider mb-2 font-medium"
                                 variants={titleVariants}
                             >
                                 {subtitle}
@@ -81,7 +81,7 @@ const SectionWrapper = ({
                         {title && (
                             <motion.h2
                                 id={`${id}-title`}
-                                className={`text-3xl sm:text-4xl lg:text-5xl font-bold ${titleClassName} font-poppins`}
+                                className={`text-3xl sm:text-4xl lg:text-5xl font-bold ${titleClassName} font-exo2`}
                                 variants={titleVariants}
                             >
                                 {title}

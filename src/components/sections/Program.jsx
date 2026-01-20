@@ -139,7 +139,7 @@ const Program = () => {
                   <span className={`p-2 rounded-full mr-3 ${typeClasses.split(" ")[0]}`}>
                     <Icon size={20} className={`${typeClasses.split(" ")[1]}`} />
                   </span>
-                  <span className="font-sharetech text-sm sm:text-base text-brand-neutral-700 w-28 sm:w-32">
+                  <span className="font-exo2 text-sm sm:text-base text-brand-neutral-700 w-28 sm:w-32">
                     {item.time}
                   </span>
                 </div>

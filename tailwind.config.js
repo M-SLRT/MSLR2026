@@ -8,6 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        exo2: ['"Exo2"', 'sans-serif'],
         poppins: ['"Poppins"', 'sans-serif'],
         oswald: ['"Oswald"', 'sans-serif'],
         roboto: ['"Roboto"', 'sans-serif'],

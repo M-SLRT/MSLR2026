@@ -8,16 +8,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Exo2';
+  src: url('/src/assets/fonts/Exo2/Exo2-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: url('/src/assets/fonts/Exo2/Exo2-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: url('/src/assets/fonts/Exo2/Exo2-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   html {
     @apply scroll-smooth;
   }
   body {
-    @apply bg-brand-neutral-50 text-brand-neutral-700 font-poppins antialiased;
+    @apply bg-brand-neutral-50 text-brand-neutral-700 font-exo2 antialiased;
     overflow-x: hidden; /* Prevent horizontal scroll from animations */
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-poppins font-semibold text-brand-neutral-800;
+    @apply font-exo2 font-semibold text-brand-neutral-800;
   }
 }
 

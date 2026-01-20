@@ -21,7 +21,7 @@ const Header = forwardRef(({ navLinks, activeSection, onNavClick }, ref) => {
         onNavClick(id);
         if (isMobile) setIsMobileMenuOpen(false);
       }}
-      className={`relative px-3 py-2 rounded-md text-base font-bold transition-all duration-200 ease-in-out group font-poppins
+      className={`relative px-3 py-2 rounded-md text-base font-bold transition-all duration-200 ease-in-out group font-exo2
                   ${isMobile ? 'block w-full text-left text-lg py-3' : ''}
                   ${activeSection === id 
                     ? (isMobile ? 'bg-brand-primary-light text-white' : (isScrolled ? 'text-brand-accent-light' : 'text-brand-primary-dark')) 
@@ -57,7 +57,7 @@ const Header = forwardRef(({ navLinks, activeSection, onNavClick }, ref) => {
           {/* Logo */}
           <button onClick={() => onNavClick('hero')} className="flex items-center space-x-2 transition-opacity">
             <img src={logo} alt="MSLR Logo" className="h-10 w-30 rounded-full" />
-            {/* <span className={`font-poppins text-xl font-semibold hidden sm:inline ${isScrolled ? 'text-brand-accent-light' : 'text-brand-primary-dark'}`}>MSLR 2026</span> */}
+            {/* <span className={`font-exo2 text-xl font-semibold hidden sm:inline ${isScrolled ? 'text-brand-accent-light' : 'text-brand-primary-dark'}`}>MSLR 2026</span> */}
           </button>
 
           {/* Desktop Navigation */}
