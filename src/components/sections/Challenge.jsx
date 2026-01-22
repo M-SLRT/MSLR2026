@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 import { BarChart3, Database, Zap, Users, FileCode, BookOpen, Award, DollarSign, ExternalLink, ShieldCheck } from 'lucide-react';
 
 // Fixed image imports
-import task1 from "../../assets/images/track1.png";
+// import task1 from "../../assets/images/track1.png";
+import task1 from "../../assets/images/track1_op2.png";
 import task2 from "../../assets/images/track2.png";
 
 const challengeTracks = [
