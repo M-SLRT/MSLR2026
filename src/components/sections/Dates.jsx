@@ -24,7 +24,7 @@ const deadlinesData = {
         { date: "March 7, 2026", event: "Workshop Paper Submission Deadline", icon: Paperclip },
         { date: "April 1, 2026", event: "Notification to Authors", icon: CheckCircle },
         { date: "April 11, 2026", event: "Camera-ready Deadline", icon: ListChecks },
-        { date: "Workshop Date", event: "TBA", icon: Mic, highlight: true },
+        { date: "June 3, 2026", event: "Workshop Date", icon: Mic, highlight: true },
     ],
     challenge: [
         { date: "January 25, 2026", event: "Release of training and development sets", icon: Rocket },
