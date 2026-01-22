@@ -118,7 +118,7 @@ const Home = () => {
                 </motion.p>
             </SectionWrapper>
 
-            <SectionWrapper id="program-speakers-internal" title="Invited Speakers" subtitle="Learn from the Leaders" bgColor="bg-white">
+            {/* <SectionWrapper id="program-speakers-internal" title="Invited Speakers" subtitle="Learn from the Leaders" bgColor="bg-white">
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
                     {speakersData.map((speaker, index) => (
                         <motion.div
@@ -157,7 +157,7 @@ const Home = () => {
                         </motion.div>
                     ))}
                 </div>
-            </SectionWrapper>
+            </SectionWrapper> */}
 
         </>
     );

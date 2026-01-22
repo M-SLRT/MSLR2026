@@ -5,27 +5,24 @@ import { motion } from 'framer-motion';
 import { ChevronRight, ExternalLink, UserCircle, Clock, Coffee, Users, Mic, Presentation, MessageSquare, Award as AwardIcon } from 'lucide-react';
 
 
+import dummy from "../../assets/images/dummy.png";
 import Prof_Richard from "../../assets/images/RichardBowden.webp";
 import Dr_Oscar from "../../assets/images/oscarkoller.jpg";
 import Dr_Leon from "../../assets/images/leon-sigal.jpg";
 import Dr_Abraham from "../../assets/images/glasser_abraham_headshot_cropped.jpeg";
 
+
 const programSchedule = [
   { time: "08:30-08:45", event: "Opening remarks, goals, challenge overview", icon: Mic, type: "general" },
-  { time: "08:45-09:45", event: "Oral presentations (Session 1)", icon: Presentation, type: "presentation", session: 1 },
-  { time: "09:45-10:15", event: "Keynote 1 - Prof. Richard Bowden", icon: UserCircle, type: "keynote", img: Prof_Richard, title: "Automatic translation of Sign Languages" },
-  { time: "10:15-11:15", event: "Oral presentations (Session 2)", icon: Presentation, type: "presentation", session: 2 },
-  { time: "11:15-11:30", event: "Coffee Break & Networking", icon: Coffee, type: "break" },
-  { time: "11:30-12:00", event: "Keynote 2 - Dr. Leon Sigal", icon: UserCircle, type: "keynote", img: Dr_Leon, title: "The Curious Case of Foundational and VLM Models" },
-  { time: "12:00-13:00", event: "Oral presentations (Session 3)", icon: Presentation, type: "presentation", session: 3 },
-  { time: "13:00-14:00", event: "Lunch Break", icon: Coffee, type: "break" },
-  { time: "14:00-14:30", event: "Keynote 3 - Dr. Oscar Koller", icon: UserCircle, type: "keynote", img: Dr_Oscar, title: "Delivering Sign Language AI at Scale: From Synthetic Data to Real-World Use" },
-  { time: "14:30-15:00", event: "Keynote 4 - Dr. Abraham Glasser", icon: UserCircle, type: "keynote", img: Dr_Abraham, title: "Technology Adoption Strategies: A Risk-Informed Approach for Evaluating AI and Hybrid AI-human Language Access Solutions" },
-  { time: "15:00-15:15", event: "Coffee Break & Networking", icon: Coffee, type: "break" },
-  { time: "15:15-16:15", event: "Oral presentations (Session 4)", icon: Presentation, type: "presentation", session: 4 },
-  { time: "16:15-16:45", event: "Poster Presentations", icon: Presentation, type: "presentation"},
-  { time: "16:45-17:00", event: "Awards and Closing Remarks", icon: AwardIcon, type: "general" },
-  { time: "17:00-18:00", event: "Poster Session, Demos, & Networking", icon: Users, type: "poster" },
+  { time: "08:45-09:15", event: "Oral presentations (Session 1)", icon: Presentation, type: "presentation", session: 1 },
+  { time: "09:15-09:45", event: "Keynote 1", icon: UserCircle, type: "keynote", img: dummy, title: "TBA" },
+  { time: "09:45-10:15", event: "Keynote 2", icon: UserCircle, type: "keynote", img: dummy, title: "TBA" },
+  { time: "10:15-10:30", event: "Coffee Break & Networking", icon: Coffee, type: "break" },
+  { time: "10:30-11:00", event: "Keynote 3", icon: UserCircle, type: "keynote", img: dummy, title: "TBA" },
+  { time: "11:00-11:30", event: "Oral presentations (Session 2)", icon: Presentation, type: "presentation", session: 2 },
+  { time: "11:30-12:00", event: "Oral presentations (Session 3)", icon: Presentation, type: "presentation", session: 3 },
+  { time: "12:00-12:45", event: "Panel Discussion", icon: Presentation, type: "presentation", session: 3 },
+  { time: "12:45-13:00", event: "Awards and Closing Remarks", icon: AwardIcon, type: "general" },
 ];
 
 const cardVariants = (delay = 0) => ({
@@ -176,21 +173,21 @@ const Program = () => {
                   )}
 
                   {/* Oral presentations list */}
-                  {item.type === "presentation" && item.session && (
-                    <ul className="list-disc ml-5 text-sm text-brand-neutral-700 mt-2 space-y-3">
-                      {sessionDetails[item.session].map((paper, i) => (
-                        <li key={i} className="space-y-1">
+                  {/* {item.type === "presentation" && item.session && ( */}
+                    {/* <ul className="list-disc ml-5 text-sm text-brand-neutral-700 mt-2 space-y-3"> */}
+                      {/* {sessionDetails[item.session].map((paper, i) => ( */}
+                        {/* <li key={i} className="space-y-1"> */}
                           {/* Paper title */}
-                          <p className="font-medium">{paper.title}</p>
+                          {/* <p className="font-medium">{paper.title}</p> */}
 
                           {/* Author names */}
-                          <p className="text-xs italic text-teal-600">
-                            {paper.authors}
-                          </p>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                          {/* <p className="text-xs italic text-teal-600"> */}
+                            {/* {paper.authors} */}
+                          {/* </p> */}
+                        {/* </li> */}
+                      {/* ))} */}
+                    {/* </ul> */}
+                  {/* )} */}
                 </div>
               </motion.div>
             );

@@ -9,6 +9,9 @@ const submissionGuidelines = [
         title: "Paper Submission Platform",
         icon: Edit3,
         content: "All papers must be submitted via OpenReview.",
+        items:[
+            "By submitting a paper, authors also agree to potentially serve as reviewers for the workshop."
+        ],
         link: { text: "Submit via OpenReview", url: "https://openreview.net/group?id=thecvf.com/CVPR/2026/Conference#tab-your-consoles" }
     },
     {
@@ -32,15 +35,15 @@ const submissionGuidelines = [
         ],
         footer: "Review criteria include relevance, novelty, technical merit, and clarity."
     },
-    {
-        title: "Presentation & Attendance",
-        icon: Users,
-        items: [
-            "Accepted papers will be presented as <strong>poster presentations</strong>.",
-            "At least one author (or a designated representative) must attend the workshop <strong>in person</strong> to present the accepted paper.",
-            "By submitting a paper, authors also agree to potentially serve as reviewers for the workshop."
-        ]
-    },
+    // {
+    //     title: "Presentation & Attendance",
+    //     icon: Users,
+    //     items: [
+    //         "Accepted papers will be presented as <strong>poster presentations</strong>.",
+    //         "At least one author (or a designated representative) must attend the workshop <strong>in person</strong> to present the accepted paper.",
+    //         "By submitting a paper, authors also agree to potentially serve as reviewers for the workshop."
+    //     ]
+    // },
     {
         title: "Proceedings & Policy",
         icon: CheckSquare,
@@ -100,7 +103,7 @@ const GuidelineCard = ({ guideline, index }) => {
 const Submission = () => {
     return (
         <SectionWrapper id="submission-internal" title="Submission Guidelines" subtitle="Share Your Work" bgColor="bg-brand-neutral-100">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
                 {submissionGuidelines.map((guideline, index) => (
                     <GuidelineCard key={guideline.title} guideline={guideline} index={index} />
                 ))}

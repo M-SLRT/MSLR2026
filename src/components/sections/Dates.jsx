@@ -5,20 +5,33 @@ import { motion } from 'framer-motion';
 import Submission from './Guidelines';
 import { CalendarDays, CheckCircle, ListChecks, Award, Mic, Paperclip, Rocket, TestTube2, Clock } from 'lucide-react';
 
+// CFP announcement: Jan 24
+// Papers submission deadline: March 7 (no extension will be given)
+// Review submission deadline: March 17
+// Decisions: April 1, 2026
+// Camera-ready: April 11 2026             
+ 
+// Challenge dates:
+// Release of training and development sets: January 25, 2026
+// Release of test sets: February 15, 2026
+// Challenge Submission deadline: February 25, 2026
+// Announcement of results: February 28, 2026
+// Papers submission deadline: March 7, 2026
+
 const deadlinesData = {
     workshop: [
-        { date: "May 12, 2026", event: "Launch of the Challenge", icon: Rocket },
-        { date: "July 3, 2026", event: "Workshop Paper Submission Deadline", icon: Paperclip },
-        { date: "July 11, 2026", event: "Notification to Authors", icon: CheckCircle },
-        { date: "August 5, 2026", event: "Camera-ready Deadline", icon: ListChecks },
-        { date: "October 20, 2026", event: "Workshop Date", icon: Mic, highlight: true },
+        { date: "January 24, 2026", event: "Launch of the Challenge", icon: Rocket },
+        { date: "March 7, 2026", event: "Workshop Paper Submission Deadline", icon: Paperclip },
+        { date: "April 1, 2026", event: "Notification to Authors", icon: CheckCircle },
+        { date: "April 11, 2026", event: "Camera-ready Deadline", icon: ListChecks },
+        { date: "Workshop Date", event: "TBA", icon: Mic, highlight: true },
     ],
     challenge: [
-        { date: "May 12, 2026", event: "Release of training and development sets", icon: Rocket },
-        { date: "June 2, 2026", event: "Release of test sets", icon: TestTube2 },
-        { date: "June 23, 2026", event: "Challenge submission deadline", icon: Paperclip },
-        { date: "June 24, 2026", event: "Announcement of results", icon: Award },
-        { date: "July 3, 2026", event: "Paper submission deadline", icon: ListChecks },
+        { date: "January 25, 2026", event: "Release of training and development sets", icon: Rocket },
+        { date: "February 15, 2026", event: "Release of test sets", icon: TestTube2 },
+        { date: "February 25, 2026", event: "Challenge submission deadline", icon: Paperclip },
+        { date: "February 28, 2026", event: "Announcement of results", icon: Award },
+        { date: "March 7, 2026", event: "Paper submission deadline", icon: ListChecks },
     ]
 };
 
@@ -74,10 +87,10 @@ const Dates = () => {
                 {/* Challenge Deadlines Card */}
                 <motion.div className="content-card" variants={cardVariants(0.15)}>
                     <div className="flex items-center mb-6">
-                        <span className="p-3 bg-brand-accent/10 rounded-full mr-4 shadow-sm">
-                            <Award className="w-8 h-8 text-brand-accent" />
+                        <span className="p-3 bg-brand-primary/10 rounded-full mr-4 shadow-sm">
+                            <Award className="w-8 h-8 text-brand-primary" />
                         </span>
-                        <h3 className="text-2xl lg:text-3xl font-semibold text-brand-accent-dark">Challenge Deadline</h3>
+                        <h3 className="text-2xl lg:text-3xl font-semibold text-brand-primary-dark">Challenge Deadline</h3>
                     </div>
                     <ul className="space-y-4">
                         {deadlinesData.challenge.map((item, index) => (

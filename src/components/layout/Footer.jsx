@@ -82,14 +82,14 @@ const Footer = () => {
                 <div className="mt-16 border-t border-white/20 pt-10">
                     <h5 className="font-exo2 text-2xl text-white mb-6 font-semibold text-center">Sponsors</h5>
                     <div className="flex flex-wrap justify-center items-center gap-12">
-                        {/* <a
+                        <a
                             href="https://www.sharedtech.com.sa/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:opacity-80 transition-opacity"
                         >
                             <img src={SharedTech} alt="SharedTech Logo" className="h-20 sm:h-24 object-contain" />
-                        </a> */}
+                        </a>
                         <a
                             href="https://ri.kfupm.edu.sa/jrcai"
                             target="_blank"
