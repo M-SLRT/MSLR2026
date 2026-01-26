@@ -27,7 +27,7 @@ const deadlinesData = {
         { date: "June 3, 2026", event: "Workshop Date", icon: Mic, highlight: true },
     ],
     challenge: [
-        { date: "January 25, 2026", event: "Release of training and development sets", icon: Rocket },
+        { date: "January 27, 2026", event: "Release of training and development sets", icon: Rocket },
         { date: "February 15, 2026", event: "Release of test sets", icon: TestTube2 },
         { date: "February 25, 2026", event: "Challenge submission deadline", icon: Paperclip },
         { date: "February 28, 2026", event: "Announcement of results", icon: Award },
