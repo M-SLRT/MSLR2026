@@ -20,23 +20,23 @@ const challengeTracks = [
         accentColor: "text-brand-primary",
         // Fixed image reference - direct reference to imported variable
         image: task1, 
-        description: "Using the Isharah dataset, this track features around 14,000 videos across 1,000 unique sentences by 18 signers. Participants will be provided with pose modality data consisting of the upper body skeleton, 2D hand keypoints (both hands), face keypoints, and lips contour — totaling 86 keypoints per frame.\n\n",
+        description: "Using the Isharah2000 dataset, this track features around 30,000 videos across 2,000 unique sentences by 18 signers. Participants will be provided with pose modality data consisting of the upper body skeleton, 2D hand keypoints (both hands), face keypoints, and lips contour — totaling 86 keypoints per frame.\n\n",
 
         evaluation: "<strong>Evaluation:</strong> Submissions will be evaluated using <strong>Word Error Rate (WER)</strong>, which measures the edit distance (substitutions, deletions, insertions) between predicted and reference sentences. Lower WER indicates better performance.",
         subTasks: [
             "<strong>Signer-Independent:</strong> Train your models on a subset of signers and evaluate on entirely unseen signers. This sub-task focuses on cross-signer generalization, which is critical for building scalable real-world continuous sign language recognition systems.",
             "<strong>Unseen Sentences:</strong> Train on a subset of sentences and evaluate on structurally different, unseen sentences. This tests your model's ability to understand grammar, semantics, and sentence-level sign composition without prior exposure."
         ],
-        links: [
-            { text: "Starter Kit", url: "", icon: FileCode },
-            { text: "Competition - TBA", url: "", icon: BookOpen },
-            { text: "Competition - TBA", url: "", icon: BookOpen }
-        ],
         // links: [
-        //     { text: "Starter Kit", url: "https://github.com/gufranSabri/Pose86K-CSLR-Isharah", icon: FileCode },
-        //     { text: "Competition - Task 1 (CodaLab)", url: "https://codalab.lisn.upsaclay.fr/competitions/22899", icon: BookOpen },
-        //     { text: "Competition - Task 2 (CodaLab)", url: "https://codalab.lisn.upsaclay.fr/competitions/22900", icon: BookOpen }
+        //     { text: "Starter Kit", url: "", icon: FileCode },
+        //     { text: "Competition - TBA", url: "", icon: BookOpen },
+        //     { text: "Competition - TBA", url: "", icon: BookOpen }
         // ],
+        links: [
+            { text: "Starter Kit", url: "https://github.com/gufranSabri/Pose86K-CSLR-Isharah", icon: FileCode },
+            { text: "Competition - Task 1 (CodaBench)", url: "https://www.codabench.org/competitions/13266/", icon: BookOpen },
+            { text: "Competition - Task 2 (CodaBench)", url: "https://www.codabench.org/competitions/13267/", icon: BookOpen }
+        ],
 
         prizes: [
             { place: "1st Place", amount: "$1,000" },
@@ -56,18 +56,22 @@ const challengeTracks = [
         accentColor: "text-brand-accent",
         // Fixed image reference
         image: task2,
-        description: "This track presents a sign language recognition task on our multimodal preliminary dataset, featuring RGB videos and 60-GHz radar range-Doppler maps, and including 126 Italian Sign Language gestures (100 medical terms + 26 letters) across 205 expert sessions.",
+        description: "This track presents a sign language recognition task on our multimodal preliminary dataset, featuring 60-GHz radar range-Doppler maps, and including 126 Italian Sign Language gestures (100 medical terms + 26 letters) across 205 expert sessions.",
 
         evaluation: "<strong>Evaluation:</strong> Submissions will be evaluated using <strong>Top-1 Accuracy</strong>, which measures the percentage of correctly predicted gestures. Higher accuracy indicates better performance.",
         subTasks: [],
-        // links: [
-        //     { text: "Competition (Kaggle)", url: "https://www.kaggle.com/competitions/CVPR-mslr-2026-track-2", icon: BookOpen }
-        // ],
         links: [
-            { text: "TBA", url: "", icon: BookOpen }
+            { text: "Competition (Kaggle)", url: "https://www.kaggle.com/competitions/CVPR-mslr-2026-track-2", icon: BookOpen }
         ],
+        // links: [
+        //     { text: "TBA", url: "", icon: BookOpen }
+        // ],
         sponsor: null, // { name: "TBD", url: "#" },
-        prizes: [] // { place: "TBD", amount: "TBD" }
+        prizes: [
+            { place: "1st Place", amount: "$1,000" },
+            { place: "2nd Place", amount: "$750" },
+            { place: "3rd Place", amount: "$500" }
+        ],
     }
 ];
 
@@ -123,7 +127,7 @@ const ChallengeCard = ({ track, index }) => {
                     return (
                     <a
                         key={link.text}
-                        // href={link.url}
+                        href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`btn btn-sm border !py-2 !px-4 text-xs sm:text-sm flex items-center
@@ -140,12 +144,12 @@ const ChallengeCard = ({ track, index }) => {
 
 
 
-                {/* {track.sponsor && (
+                {track.sponsor && (
                     <p className="text-sm text-brand-neutral-600 mb-1">
                         🤝 Sponsor: <a href={track.sponsor.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline" style={{ color: track.accentColor.replace('text-', '') }}>{track.sponsor.name}</a>
                     </p>
-                )} */}
-                {/* {track.prizes && track.prizes.length > 0 && (
+                )}
+                {track.prizes && track.prizes.length > 0 && (
                     <div>
                         <p className={`text-sm font-semibold ${track.accentColor} mb-1 flex items-center`}><DollarSign size={16} className="mr-1.5" />Prizes:</p>
                         <ul className="text-xs sm:text-sm text-brand-neutral-600 list-disc list-inside space-y-0.5">
@@ -154,7 +158,7 @@ const ChallengeCard = ({ track, index }) => {
                             ))}
                         </ul>
                     </div>
-                )} */}
+                )}
             </div>
         </motion.div>
     );
