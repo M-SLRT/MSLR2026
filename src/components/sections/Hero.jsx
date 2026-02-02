@@ -188,7 +188,7 @@ const Hero = () => {
                                     flex items-center mx-auto"
                             aria-label="Register Now"
                         >
-                            <a href="https://openreview.net/group?id=thecvf.com/CVPR/2026/Conference#tab-your-consoles">Submit Your Paper</a>
+                            <a href="https://cmt3.research.microsoft.com/MSLR2026">Submit Your Paper</a>
                             <ArrowUpCircle size={18} className="ml-2 text-white" aria-hidden="true" />
                         </motion.button>
                     </motion.div>

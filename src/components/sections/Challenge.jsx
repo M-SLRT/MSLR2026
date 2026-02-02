@@ -56,22 +56,22 @@ const challengeTracks = [
         accentColor: "text-brand-accent",
         // Fixed image reference
         image: task2,
-        description: "This track presents a sign language recognition task on our multimodal preliminary dataset, featuring 60-GHz radar range-Doppler maps, and including 126 Italian Sign Language gestures (100 medical terms + 26 letters) across 205 expert sessions.",
+        description: "This track presents a sign language recognition task on our multimodal extended dataset, featuring RGB videos, 60-GHz radar range-Doppler maps and motion data (accel+gyro), and including 126 Italian Sign Language gestures (100 medical terms + 26 letters) across 200 expert sessions.",
 
         evaluation: "<strong>Evaluation:</strong> Submissions will be evaluated using <strong>Top-1 Accuracy</strong>, which measures the percentage of correctly predicted gestures. Higher accuracy indicates better performance.",
         subTasks: [],
         links: [
-            { text: "Competition (Kaggle)", url: "https://www.kaggle.com/competitions/CVPR-mslr-2026-track-2", icon: BookOpen }
+            { text: "Competition (Kaggle)", url: "https://www.kaggle.com/competitions/cvpr-mslr-2026-track-2", icon: BookOpen }
         ],
         // links: [
         //     { text: "TBA", url: "", icon: BookOpen }
         // ],
         sponsor: null, // { name: "TBD", url: "#" },
-        prizes: [
-            { place: "1st Place", amount: "$1,000" },
-            { place: "2nd Place", amount: "$750" },
-            { place: "3rd Place", amount: "$500" }
-        ],
+        // prizes: [
+        //     { place: "1st Place", amount: "$1,000" },
+        //     { place: "2nd Place", amount: "$750" },
+        //     { place: "3rd Place", amount: "$500" }
+        // ],
     }
 ];
 

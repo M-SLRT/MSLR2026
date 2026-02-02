@@ -12,7 +12,7 @@ const submissionGuidelines = [
         items:[
             "By submitting a paper, authors also agree to potentially serve as reviewers for the workshop."
         ],
-        link: { text: "Submit via OpenReview", url: "https://openreview.net/group?id=thecvf.com/CVPR/2026/Conference#tab-your-consoles" }
+        link: { text: "Submit via CMT", url: "https://cmt3.research.microsoft.com/MSLR2026" }
     },
     {
         title: "Formatting Your Manuscript",
@@ -115,17 +115,17 @@ const Submission = () => {
                 transition={{ delay: submissionGuidelines.length * 0.1 + 0.2 }}
             >
                 <a
-                    href="https://openreview.net/group?id=MSL/2026/Conference"
+                    href="https://cmt3.research.microsoft.com/MSLR2026"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-lg text-lg px-8 py-4" // Larger primary button
                 >
-                    <Edit3 size={20} className="mr-2.5" /> Go to OpenReview Submission Portal
+                    <Edit3 size={20} className="mr-2.5" /> Go to CMT Submission Portal
                 </a>
             </motion.div>
-            {/* <div className="mt-8 text-center text-sm text-brand-neutral-600">
-                The OpenReview service was used for managing the peer-reviewing process for this conference. This service was provided for free by OpenReview and they bore all expenses, including costs for cloud services as well as for software development and support.
-            </div> */}
+            <div className="mt-8 text-center text-sm text-brand-neutral-600">
+                The CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by OpenReview and they bore all expenses, including costs for cloud services as well as for software development and support.
+            </div>
         </SectionWrapper>
     );
 };

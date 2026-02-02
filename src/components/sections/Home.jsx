@@ -6,10 +6,7 @@ import { Award, Users, Mic, FileText, ChevronRight, ExternalLink } from 'lucide-
 
 import dummy from "../../assets/images/dummy.png";
 import dobi from "../../assets/images/dobi.png";
-import Prof_Richard from "../../assets/images/RichardBowden.webp";
-import Dr_Oscar from "../../assets/images/oscarkoller.jpg";
-import Dr_Leon from "../../assets/images/leon-sigal.jpg";
-import Dr_Abraham from "../../assets/images/glasser_abraham_headshot_cropped.jpeg";
+import Prof_Sevi from "../../assets/images/sevi.jpg";
 
 const content = {
     overview: [
@@ -32,22 +29,13 @@ const content = {
 
 const speakersData = [
     { 
-        name: "Prof. John Doe",
-        affiliation: "University of Imaginary, Nowhere", 
-        imgSrc: dummy, 
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-        link: "https://scholar.google.com/citations?user=mvvgDvcAAAAJ",
-        title: "TITLE",
-        abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    { 
-        name: "Prof. Dobi A.",
-        affiliation: "University of Dolphins, KSA", 
-        imgSrc: dobi, 
-        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-        link: "https://scholar.google.com/citations?user=mvvgDvcAAAAJ",
-        title: "TITLE",
-        abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        name: "Prof. Sevgi Gurbuz",
+        affiliation: "North Carolina State University", 
+        imgSrc: Prof_Sevi, 
+        bio: "Dr. Sevgi Z. Gurbuz is an Associate Professor of Electrical and Computer Engineering at North Carolina State University, where she leads the Lab for Computational Intelligence in Radar (CI4R). Her research focuses on RF-enabled cyber-physical human systems, radar signal processing, and physics-aware machine learning for applications in human sensing, healthcare, automotive systems, and defense. She is a pioneer of radar-based American Sign Language recognition and holds a related patent awarded in 2022.", 
+        link: "https://scholar.google.com/citations?hl=en&user=T5Uox50AAAAJ",
+        // title: "TITLE",
+        // abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
 ];
 
@@ -118,8 +106,8 @@ const Home = () => {
                 </motion.p>
             </SectionWrapper>
 
-            {/* <SectionWrapper id="program-speakers-internal" title="Invited Speakers" subtitle="Learn from the Leaders" bgColor="bg-white">
-                <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+            <SectionWrapper id="program-speakers-internal" title="Invited Speakers" subtitle="Learn from the Leaders" bgColor="bg-white">
+                <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-10">
                     {speakersData.map((speaker, index) => (
                         <motion.div
                             key={speaker.name}
@@ -157,7 +145,7 @@ const Home = () => {
                         </motion.div>
                     ))}
                 </div>
-            </SectionWrapper> */}
+            </SectionWrapper>
 
         </>
     );
