@@ -7,6 +7,7 @@ import { Award, Users, Mic, FileText, ChevronRight, ExternalLink } from 'lucide-
 import dummy from "../../assets/images/dummy.png";
 import dobi from "../../assets/images/dobi.png";
 import Prof_Sevi from "../../assets/images/sevi.jpg";
+import Prof_Gul from "../../assets/images/gul.jpg";
 
 const content = {
     overview: [
@@ -34,6 +35,16 @@ const speakersData = [
         imgSrc: Prof_Sevi, 
         bio: "Dr. Sevgi Z. Gurbuz is an Associate Professor of Electrical and Computer Engineering at North Carolina State University, where she leads the Lab for Computational Intelligence in Radar (CI4R). Her research focuses on RF-enabled cyber-physical human systems, radar signal processing, and physics-aware machine learning for applications in human sensing, healthcare, automotive systems, and defense. She is a pioneer of radar-based American Sign Language recognition and holds a related patent awarded in 2022.", 
         link: "https://scholar.google.com/citations?hl=en&user=T5Uox50AAAAJ",
+        // title: "TITLE",
+        // abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+
+    { 
+        name: "Prof. Gül Varol",
+        affiliation: "École des Ponts ParisTech", 
+        imgSrc: Prof_Gul, 
+        bio: "Gül Varol is a permanent researcher (~Assoc. Prof.) in the IMAGINE group at École des Ponts ParisTech, an ELLIS Scholar, and a Guest Scientist at MPI. Previously, she was a postdoctoral researcher at the University of Oxford (VGG), working with Andrew Zisserman. She obtained her PhD from the WILLOW team of Inria Paris and École Normale Supérieure (ENS). Her thesis, co-advised by Ivan Laptev and Cordelia Schmid, received the PhD awards from ELLIS and AFRIF. During her PhD, she spent time at MPI, Adobe, and Google. Prior to that, she received her BS and MS degrees from Boğaziçi University. She regularly serves as an Area Chair at major computer vision conferences and has served as a Program Chair at ECCV'24. She is an associate editor for IJCV and was in the award committee for ICCV'23. She has co-organized a number of workshops at CVPR, ICCV, ECCV, and NeurIPS. Her research interests cover vision and language applications, including video representation learning, human motion synthesis, and sign languages. ( copy shorter version for talks)", 
+        link: "https://scholar.google.fr/citations?user=ceSzF9YAAAAJ&hl=en",
         // title: "TITLE",
         // abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
@@ -107,7 +118,7 @@ const Home = () => {
             </SectionWrapper>
 
             <SectionWrapper id="program-speakers-internal" title="Invited Speakers" subtitle="Learn from the Leaders" bgColor="bg-white">
-                <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-10">
+                <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
                     {speakersData.map((speaker, index) => (
                         <motion.div
                             key={speaker.name}
