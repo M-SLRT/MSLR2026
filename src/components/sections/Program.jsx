@@ -6,17 +6,14 @@ import { ChevronRight, ExternalLink, UserCircle, Clock, Coffee, Users, Mic, Pres
 
 
 import dummy from "../../assets/images/dummy.png";
-import Prof_Richard from "../../assets/images/RichardBowden.webp";
-import Dr_Oscar from "../../assets/images/oscarkoller.jpg";
-import Dr_Leon from "../../assets/images/leon-sigal.jpg";
-import Dr_Abraham from "../../assets/images/glasser_abraham_headshot_cropped.jpeg";
-
+import Prof_Sevi from "../../assets/images/sevi.jpg";
+import Prof_Gul from "../../assets/images/gul.jpg";
 
 const programSchedule = [
   { time: "08:30-08:45", event: "Opening remarks, goals, challenge overview", icon: Mic, type: "general" },
   { time: "08:45-09:15", event: "Oral presentations (Session 1)", icon: Presentation, type: "presentation", session: 1 },
-  { time: "09:15-09:45", event: "Keynote 1", icon: UserCircle, type: "keynote", img: dummy, title: "TBA" },
-  { time: "09:45-10:15", event: "Keynote 2", icon: UserCircle, type: "keynote", img: dummy, title: "TBA" },
+  { time: "09:15-09:45", event: "Prof. Sevgi Gurbu", icon: UserCircle, type: "keynote", img: Prof_Sevi, title: "TBA" },
+  { time: "09:45-10:15", event: "Prof. Gül Varol", icon: UserCircle, type: "keynote", img: Prof_Gul, title: "TBA" },
   { time: "10:15-10:30", event: "Coffee Break & Networking", icon: Coffee, type: "break" },
   { time: "10:30-11:00", event: "Keynote 3", icon: UserCircle, type: "keynote", img: dummy, title: "TBA" },
   { time: "11:00-11:30", event: "Oral presentations (Session 2)", icon: Presentation, type: "presentation", session: 2 },
