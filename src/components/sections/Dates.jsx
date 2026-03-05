@@ -31,7 +31,7 @@ const deadlinesData = {
         { date: "February 15, 2026", event: "Release of test sets", icon: TestTube2 },
         { date: "February 25, 2026", event: "Challenge submission deadline", icon: Paperclip },
         { date: "February 26, 2026", event: "Announcement of results", icon: Award },
-        { date: "March 10, 2026", event: "Paper submission deadline", icon: ListChecks },
+        { date: "March 14, 2026", event: "Paper submission deadline", icon: ListChecks },
     ]
 };
 
