@@ -21,7 +21,7 @@ import { CalendarDays, CheckCircle, ListChecks, Award, Mic, Paperclip, Rocket, T
 const deadlinesData = {
     workshop: [
         { date: "January 24, 2026", event: "Launch of the Challenge", icon: Rocket },
-        { date: "March 7, 2026", event: "Workshop Paper Submission Deadline", icon: Paperclip },
+        { date: "March 14, 2026", event: "Workshop Paper Submission Deadline", icon: Paperclip },
         { date: "April 1, 2026", event: "Notification to Authors", icon: CheckCircle },
         { date: "April 11, 2026", event: "Camera-ready Deadline", icon: ListChecks },
         { date: "June 3, 2026", event: "Workshop Date", icon: Mic, highlight: true },
