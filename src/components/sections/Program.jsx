@@ -8,18 +8,18 @@ import { ChevronRight, ExternalLink, UserCircle, Clock, Coffee, Users, Mic, Pres
 import dummy from "../../assets/images/dummy.png";
 import Prof_Sevi from "../../assets/images/sevi.jpg";
 import Prof_Gul from "../../assets/images/gul.jpg";
+import Prof_Lu from "../../assets/images/alexlu_photo.png";
 
 const programSchedule = [
-  { time: "08:30-08:45", event: "Opening remarks, goals, challenge overview", icon: Mic, type: "general" },
-  { time: "08:45-09:15", event: "Oral presentations (Session 1)", icon: Presentation, type: "presentation", session: 1 },
-  { time: "09:15-09:45", event: "Prof. Sevgi Gurbu", icon: UserCircle, type: "keynote", img: Prof_Sevi, title: "TBA" },
-  { time: "09:45-10:15", event: "Prof. Gül Varol", icon: UserCircle, type: "keynote", img: Prof_Gul, title: "TBA" },
-  { time: "10:15-10:30", event: "Coffee Break & Networking", icon: Coffee, type: "break" },
-  { time: "10:30-11:00", event: "Keynote 3", icon: UserCircle, type: "keynote", img: dummy, title: "TBA" },
-  { time: "11:00-11:30", event: "Oral presentations (Session 2)", icon: Presentation, type: "presentation", session: 2 },
-  { time: "11:30-12:00", event: "Oral presentations (Session 3)", icon: Presentation, type: "presentation", session: 3 },
-  { time: "12:00-12:45", event: "Panel Discussion", icon: Presentation, type: "presentation", session: 3 },
-  { time: "12:45-13:00", event: "Awards and Closing Remarks", icon: AwardIcon, type: "general" },
+  { time: "13:15-13:30", event: "Opening remarks, goals, challenge overview", icon: Mic, type: "general" },
+  { time: "13:30-14:00", event: "Prof. Sevgi Gurbu", icon: UserCircle, type: "keynote", img: Prof_Sevi, title: "TBA" },
+  { time: "14:00-14:30", event: "Oral presentations (Session 1)", icon: Presentation, type: "presentation", session: 1 },
+  { time: "14:30-14:45", event: "Coffee Break & Networking", icon: Coffee, type: "break" },
+  { time: "14:45-15:15", event: "Prof. Gül Varol", icon: UserCircle, type: "keynote", img: Prof_Gul, title: "TBA" },
+  { time: "15:15-15:45", event: "Oral presentations (Session 2)", icon: Presentation, type: "presentation", session: 2 },
+  { time: "15:45-16:15", event: "Prof. Alex Lu", icon: UserCircle, type: "keynote", img: Prof_Lu, title: "Beyond Translation: Why Linguistic Study of Sign Language Empowers Deaf Communities" },
+  { time: "16:15-16:30", event: "Awards and Closing Remarks", icon: AwardIcon, type: "general" },
+  { time: "16:30-17:30", event: "Poster Session", icon: Presentation, type: "presentation", session: 3 },
 ];
 
 const cardVariants = (delay = 0) => ({

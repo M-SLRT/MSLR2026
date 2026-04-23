@@ -8,6 +8,7 @@ import dummy from "../../assets/images/dummy.png";
 import dobi from "../../assets/images/dobi.png";
 import Prof_Sevi from "../../assets/images/sevi.jpg";
 import Prof_Gul from "../../assets/images/gul.jpg";
+import Prof_Lu from "../../assets/images/alexlu_photo.png";
 
 const content = {
     overview: [
@@ -43,8 +44,18 @@ const speakersData = [
         name: "Prof. Gül Varol",
         affiliation: "École des Ponts ParisTech", 
         imgSrc: Prof_Gul, 
-        bio: "Gül Varol is a permanent researcher (~Assoc. Prof.) in the IMAGINE group at École des Ponts ParisTech, an ELLIS Scholar, and a Guest Scientist at MPI. Previously, she was a postdoctoral researcher at the University of Oxford (VGG), working with Andrew Zisserman. She obtained her PhD from the WILLOW team of Inria Paris and École Normale Supérieure (ENS). Her thesis, co-advised by Ivan Laptev and Cordelia Schmid, received the PhD awards from ELLIS and AFRIF. During her PhD, she spent time at MPI, Adobe, and Google. Prior to that, she received her BS and MS degrees from Boğaziçi University. She regularly serves as an Area Chair at major computer vision conferences and has served as a Program Chair at ECCV'24. She is an associate editor for IJCV and was in the award committee for ICCV'23. She has co-organized a number of workshops at CVPR, ICCV, ECCV, and NeurIPS. Her research interests cover vision and language applications, including video representation learning, human motion synthesis, and sign languages. ( copy shorter version for talks)", 
+        bio: "Gül Varol is a permanent researcher (~Assoc. Prof.) in the IMAGINE group at École des Ponts ParisTech, an ELLIS Scholar, and a Guest Scientist at MPI. Previously, she was a postdoctoral researcher at the University of Oxford (VGG) with Andrew Zisserman, and obtained her PhD from Inria Paris and ENS, co-advised by Ivan Laptev and Cordelia Schmid. Her thesis received PhD awards from ELLIS and AFRIF. She regularly serves as Area Chair at major vision conferences, was Program Chair at ECCV'24, and is an associate editor for IJCV. Her research covers video representation learning, human motion synthesis, and sign languages.", 
         link: "https://scholar.google.fr/citations?user=ceSzF9YAAAAJ&hl=en",
+        // title: "TITLE",
+        // abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+
+    { 
+        name: "Prof. Alex Lu",
+        affiliation: "Microsoft Research", 
+        imgSrc: Prof_Lu, 
+        bio: "Alex Lu is a Senior Researcher at Microsoft Research New England, where he leads a research program on AI for scientific discovery. His work in sign language recognition currently focuses on advancing AI methods for the linguistic study of sign language, and he is interested in low resource sign languages and homesigners where supervised annotation is not possible. His work also seeks to expose critical flaws with sign language recognition research and aims to advance better ways of framing research that is more aligned with Deaf community perspectives. ", 
+        link: "https://scholar.google.com/citations?user=gz7gLggAAAAJ&hl=en",
         // title: "TITLE",
         // abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
@@ -118,7 +129,7 @@ const Home = () => {
             </SectionWrapper>
 
             <SectionWrapper id="program-speakers-internal" title="Invited Speakers" subtitle="Learn from the Leaders" bgColor="bg-white">
-                <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+                <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
                     {speakersData.map((speaker, index) => (
                         <motion.div
                             key={speaker.name}
