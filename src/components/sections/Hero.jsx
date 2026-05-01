@@ -12,7 +12,7 @@ import DenverSkyline from "../../assets/images/CVPR_Denver_2026.jpg";
 
 const Hero = () => {
     const title = "2nd Multimodal Sign Language Recognition Workshop";
-    const subtitle = "IEEE/CVF CVPR 2026";
+    const subtitle = "June 3, 2026";
 
     // Preload critical images for best LCP performance
     useEffect(() => {
