@@ -11,15 +11,72 @@ import Prof_Gul from "../../assets/images/gul.jpg";
 import Prof_Lu from "../../assets/images/alexlu_photo.png";
 
 const programSchedule = [
-  { time: "13:15-13:30", event: "Opening remarks, goals, challenge overview", icon: Mic, type: "general" },
-  { time: "13:30-14:00", event: "Prof. Sevgi Gurbu", icon: UserCircle, type: "keynote", img: Prof_Sevi, title: "TBA" },
-  { time: "14:00-14:30", event: "Oral presentations (Session 1)", icon: Presentation, type: "presentation", session: 1 },
-  { time: "14:30-14:45", event: "Coffee Break & Networking", icon: Coffee, type: "break" },
-  { time: "14:45-15:15", event: "Prof. Gül Varol", icon: UserCircle, type: "keynote", img: Prof_Gul, title: "TBA" },
-  { time: "15:15-15:45", event: "Oral presentations (Session 2)", icon: Presentation, type: "presentation", session: 2 },
-  { time: "15:45-16:15", event: "Prof. Alex Lu", icon: UserCircle, type: "keynote", img: Prof_Lu, title: "Beyond Translation: Why Linguistic Study of Sign Language Empowers Deaf Communities" },
-  { time: "16:15-16:30", event: "Awards and Closing Remarks", icon: AwardIcon, type: "general" },
-  { time: "16:30-17:30", event: "Poster Session", icon: Presentation, type: "presentation", session: 3 },
+  { time: "13:15-13:30", event: "Opening remarks", icon: Mic, type: "general" },
+
+  { 
+    time: "13:30-14:00",
+    event: "Prof. Gurbuz",
+    icon: UserCircle,
+    type: "keynote",
+    img: Prof_Sevi,
+    title: "TBA"
+  },
+
+  {
+    time: "14:00-14:30",
+    event: "Oral presentations (Session 1)",
+    icon: Presentation,
+    type: "presentation",
+    session: 1
+  },
+
+  {
+    time: "14:30-15:00",
+    event: "Prof. Varol",
+    icon: UserCircle,
+    type: "keynote",
+    img: Prof_Gul,
+    title: "Towards Open-Vocabulary Sign Language Translation"
+  },
+
+  {
+    time: "15:00-15:30",
+    event: "Coffee Break & Networking",
+    icon: Coffee,
+    type: "break"
+  },
+
+  {
+    time: "15:30-16:00",
+    event: "Oral presentations (Session 2)",
+    icon: Presentation,
+    type: "presentation",
+    session: 2
+  },
+
+  {
+    time: "16:00-16:30",
+    event: "Prof. Lu",
+    icon: UserCircle,
+    type: "keynote",
+    img: Prof_Lu,
+    title: "Beyond Translation: Why Linguistic Study of Sign Language Empowers Deaf Communities"
+  },
+
+  {
+    time: "16:30-16:45",
+    event: "Awards and Closing Remarks",
+    icon: AwardIcon,
+    type: "general"
+  },
+
+  {
+    time: "16:45-17:45",
+    event: "Virtual Poster (3-minute video) and Poster Session",
+    icon: Presentation,
+    type: "presentation",
+    session: 3
+  },
 ];
 
 const cardVariants = (delay = 0) => ({
