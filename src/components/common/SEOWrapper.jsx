@@ -23,7 +23,7 @@ import {
  * @param {Object} props.children - Child components
  */
 const SEOWrapper = ({
-  title = "MSLR 2026 | 1st Multimodal Sign Language Recognition Workshop",
+  title = "MSLR 2026 | 2nd Multimodal Sign Language Recognition Workshop",
   description = "MSLR 2026 - 1st Multimodal Sign Language Recognition Workshop at IEEE/CVF CVPR 2026 in Denver, Colorado.",
   path = "",
   imageUrl = "/src/assets/images/logo_small.jpeg",

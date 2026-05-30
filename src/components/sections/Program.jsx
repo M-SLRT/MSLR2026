@@ -11,27 +11,10 @@ import Prof_Gul from "../../assets/images/gul.jpg";
 import Prof_Lu from "../../assets/images/alexlu_photo.png";
 
 const programSchedule = [
-  { time: "13:15-13:30", event: "Opening remarks", icon: Mic, type: "general" },
-
-  { 
-    time: "13:30-14:00",
-    event: "Prof. Gurbuz",
-    icon: UserCircle,
-    type: "keynote",
-    img: Prof_Sevi,
-    title: "TBA"
-  },
+  { time: "13:00-13:05", event: "Opening remarks", icon: Mic, type: "general" },
 
   {
-    time: "14:00-14:30",
-    event: "Oral presentations (Session 1)",
-    icon: Presentation,
-    type: "presentation",
-    session: 1
-  },
-
-  {
-    time: "14:30-15:00",
+    time: "13:05-13:35",
     event: "Prof. Varol",
     icon: UserCircle,
     type: "keynote",
@@ -40,22 +23,25 @@ const programSchedule = [
   },
 
   {
-    time: "15:00-15:30",
-    event: "Coffee Break & Networking",
-    icon: Coffee,
-    type: "break"
+    time: "13:35-13:50",
+    event: "Oral presentations (Session 1)",
+    icon: Presentation,
+    type: "presentation",
+    session: 1,
+    title: "TEMPO at SignEval 2026: Signer-Independent Temporal Modeling and Vocabulary-Constrained Post-Processing for Arabic CSLR"
   },
 
   {
-    time: "15:30-16:00",
+    time: "13:50-14:05",
     event: "Oral presentations (Session 2)",
     icon: Presentation,
     type: "presentation",
-    session: 2
+    session: 2,
+    title: "Isolated Sign Language Recognition via MediaPipe Landmarks: A Case Study On Indian Sign Language"
   },
 
   {
-    time: "16:00-16:30",
+    time: "14:05-14:35",
     event: "Prof. Lu",
     icon: UserCircle,
     type: "keynote",
@@ -64,18 +50,43 @@ const programSchedule = [
   },
 
   {
-    time: "16:30-16:45",
-    event: "Awards and Closing Remarks",
-    icon: AwardIcon,
-    type: "general"
+    time: "14:35-14:50",
+    event: "Oral presentations (Session 1)",
+    icon: Presentation,
+    type: "presentation",
+    session: 1,
+    title: "PRISM at SignEval 2026: Privacy-Preserving Radar-Based Italian Sign Language Recognition via ConvNeXt and Ensemble Learning"
   },
 
   {
-    time: "16:45-17:45",
-    event: "Virtual Poster (3-minute video) and Poster Session",
+    time: "14:50-15:05",
+    event: "Oral presentations (Session 2)",
     icon: Presentation,
     type: "presentation",
+    session: 2,
+    title: "SignEval 2026 Challenges Results and Awards"
+  },
+
+  {
+    time: "15:05-15:30",
+    event: "Coffee Break & Networking",
+    icon: Coffee,
+    type: "break"
+  },
+
+  {
+    time: "15:30-17:30",
+    event: "Poster Session",
+    icon: Presentation,
+    type: "poster",
     session: 3
+  },
+
+  {
+    time: "17:30-17:35",
+    event: "Awards and Closing Remarks",
+    icon: AwardIcon,
+    type: "general"
   },
 ];
 
@@ -89,64 +100,7 @@ const listItemVariants = (delay = 0) => ({
     visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: "easeOut", delay } }
 });
 
-const sessionDetails = {
-  1: [
-    {
-      title: "A Closer Look at Skeleton-based Continuous Sign Language Recognition",
-      authors: "Yuecong Min, Yifan Yang, Peiqi Jiao, Zixi Nan and Xilin Chen",
-    },
-    {
-      title: "Iterative Latent Refinement for Robust Non-Autoregressive Sign Language Production",
-      authors: "Tuğçe Kızıltepe, Sümeyye Meryem Taşyürek and Hacer Yalım Keleş",
-    },
-    {
-      title: "SAGE: Segment-Aware Gloss-Free Encoding for Token-Efficient Sign Language Translation",
-      authors: "Jian He Low, Ozge Mercanoglu Sincan, Richard Bowden",
-    },
-  ],
-  2: [
-    {
-      title: "AutoSign: Direct Pose-to-Text Translation for Continuous Sign Language Recognition",
-      authors: "Samuel Johnny, Blessed Guda, Andrew Stephen, Assane Gueye",
-    },
-    {
-      title: "Can a Lightweight Transformer Deliver a Robust Multimodal Sign Language Word Recognition?",
-      authors: "Eva Berepiki, Philip Ciunkiewicz, Svetlana Yanushkevich",
-    },
-    {
-      title: "Point-Supervised Japanese Fingerspelling Localization via HR-Pro and Contrastive Learning",
-      authors: "Ryota Murai, Naoto Tsuta, Duk Shin, Yousun Kang",
-    },
-  ],
-  3: [
-    {
-      title: "Text-Aligned Radar-Based Sign Language Recognition for Healthcare Communication",
-      authors: "Raffaele Mineo, Amelia Sorrenti, Gaia Caligiore, Federica Proietto Salanitri, Giovanni Bellitto, Senya Polikovsky, Sabina Fontana, Edigio Ragonese, Concetto Spampinato, Simone Palazzo",
-    },
-    {
-      title: "RF-ChessSIGN: Radar-enabled Human-Computer Interaction in a Real-Time Sign Language-Controlled Game",
-      authors: "Kenneth DeHaan, Emre Kurtoglu, Sabyasachi Biswas, Caroline Kobek Pezzarossi, Darrin Griffin,Chris Crawford,Ali Gurbuz,Evie Malaia,Abraham Glasser, Raja Kushalnagar, Sevgi Gurbuz",
-    },
-    {
-      title: "A Smart Glove to convert gestures to speech & Text to Assist Deaf & Mute People Using Machine Learning",
-      authors: "Manisha A, Tamilselvi S",
-    },
-  ],
-  4: [
-    {
-      title: "Development of an Intelligent System for Recognizing Islamic Religious Visual Signs in the Arabic Language",
-      authors: "dauaa mhnaa, Dr.Jafar Slman, Dr.yaroub Dayoub",
-    },
-    {
-      title: "Inclusive Sign Language AI: Towards Authentic Accessibility Through Community Collaboration",
-      authors: "Abraham Glasser",
-    },
-    {
-      title: "The SignEval 2026 Challenge at the CVPR Multimodal Sign Language Recognition Workshop: Results and Discussion",
-      authors: "SignEval 2026 Organizing Committee",
-    },
-  ],
-};
+// Removed detailed sessionDetails per request; individual oral titles are now embedded in `programSchedule` entries.
 
 
 const getTypeColor = (type) => {
@@ -211,13 +165,13 @@ const Program = () => {
                       <div className="row-span-2">
                         <img
                           src={item.img}
-                          alt={item.speaker}
+                          alt={item.event}
                           className="w-12 h-12 rounded-full object-cover border border-brand-neutral-300"
                         />
                       </div>
                       {/* Top-right: keynote label + speaker name */}
                       <p className="text-sm sm:text-base font-semibold text-brand-neutral-900">
-                        {item.event}: {item.speaker}
+                        {item.event}
                       </p>
                       {/* Bottom-right: title of speech */}
                       <p className="text-xs sm:text-sm text-brand-neutral-600 italic">
@@ -225,6 +179,13 @@ const Program = () => {
                       </p>
                     </div>
                   )}
+
+                      {/* Presentation title (for oral/poster items) */}
+                      {item.type === "presentation" && item.title && (
+                        <p className="text-xs sm:text-sm text-brand-neutral-600 italic mt-1">
+                          {item.title}
+                        </p>
+                      )}
 
                   {/* Oral presentations list */}
                   {/* {item.type === "presentation" && item.session && ( */}

@@ -72,7 +72,7 @@ export function generateStructuredData() {
  * @returns {Array} Array of OG meta objects
  */
 export function generateOpenGraphTags({
-  title = "MSLR 2026 | 1st Multimodal Sign Language Recognition Workshop",
+  title = "MSLR 2026 | 2nd Multimodal Sign Language Recognition Workshop",
   description = "CVPR 2026 1st Workshop on Multimodal Sign Language Recognition in Denver, Colorado",
   imageUrl = "/src/assets/images/logo_small.jpeg",
   url = "https://Multimodal-Sign-Language-Recognition.github.io/MSLR-2026",
