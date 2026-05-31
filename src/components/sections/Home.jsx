@@ -129,7 +129,7 @@ const Home = () => {
             </SectionWrapper>
 
             <SectionWrapper id="program-speakers-internal" title="Invited Speakers" subtitle="Learn from the Leaders" bgColor="bg-white">
-                <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
+                <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
                     {speakersData.map((speaker, index) => (
                         <motion.div
                             key={speaker.name}
