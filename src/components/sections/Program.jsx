@@ -64,7 +64,8 @@ const programSchedule = [
     icon: Presentation,
     type: "presentation",
     session: 2,
-    title: "SignEval 2026 Challenges Results and Awards"
+    // Keep both lines within the same list item by using an array
+    title: ["SignEval 2026 Challenges", "Results and Awards"]
   },
 
   {
@@ -84,7 +85,7 @@ const programSchedule = [
 
   {
     time: "17:30-17:35",
-    event: "Awards and Closing Remarks",
+    event: "Closing Remarks",
     icon: AwardIcon,
     type: "general"
   },
@@ -182,9 +183,19 @@ const Program = () => {
 
                       {/* Presentation title (for oral/poster items) */}
                       {item.type === "presentation" && item.title && (
-                        <p className="text-xs sm:text-sm text-brand-neutral-600 italic mt-1">
-                          {item.title}
-                        </p>
+                        Array.isArray(item.title) ? (
+                          <ul className="list-disc ml-5 mt-1">
+                            {item.title.map((t, i) => (
+                              <li key={i} className="text-xs sm:text-sm text-brand-neutral-600 italic">
+                                {t}
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p className="text-xs sm:text-sm text-brand-neutral-600 italic mt-1">
+                            {item.title}
+                          </p>
+                        )
                       )}
 
                   {/* Oral presentations list */}
