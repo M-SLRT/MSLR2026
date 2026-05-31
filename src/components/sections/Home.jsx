@@ -30,15 +30,15 @@ const content = {
 };
 
 const speakersData = [
-    { 
-        name: "Prof. Sevgi Gurbuz",
-        affiliation: "North Carolina State University", 
-        imgSrc: Prof_Sevi, 
-        bio: "Dr. Sevgi Z. Gurbuz is an Associate Professor of Electrical and Computer Engineering at North Carolina State University, where she leads the Lab for Computational Intelligence in Radar (CI4R). Her research focuses on RF-enabled cyber-physical human systems, radar signal processing, and physics-aware machine learning for applications in human sensing, healthcare, automotive systems, and defense. She is a pioneer of radar-based American Sign Language recognition and holds a related patent awarded in 2022.", 
-        link: "https://scholar.google.com/citations?hl=en&user=T5Uox50AAAAJ",
-        // title: "TITLE",
-        // abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
+    // { 
+    //     name: "Prof. Sevgi Gurbuz",
+    //     affiliation: "North Carolina State University", 
+    //     imgSrc: Prof_Sevi, 
+    //     bio: "Dr. Sevgi Z. Gurbuz is an Associate Professor of Electrical and Computer Engineering at North Carolina State University, where she leads the Lab for Computational Intelligence in Radar (CI4R). Her research focuses on RF-enabled cyber-physical human systems, radar signal processing, and physics-aware machine learning for applications in human sensing, healthcare, automotive systems, and defense. She is a pioneer of radar-based American Sign Language recognition and holds a related patent awarded in 2022.", 
+    //     link: "https://scholar.google.com/citations?hl=en&user=T5Uox50AAAAJ",
+    //     // title: "TITLE",
+    //     // abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    // },
 
     { 
         name: "Prof. Gül Varol",
