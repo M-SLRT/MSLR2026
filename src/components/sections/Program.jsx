@@ -51,7 +51,7 @@ const programSchedule = [
 
   {
     time: "14:35-14:50",
-    event: "Oral presentations (Session 1)",
+    event: "Oral presentations (Session 3)",
     icon: Presentation,
     type: "presentation",
     session: 1,
@@ -60,7 +60,7 @@ const programSchedule = [
 
   {
     time: "14:50-15:05",
-    event: "Oral presentations (Session 2)",
+    event: "Oral presentations (Session 4)",
     icon: Presentation,
     type: "presentation",
     session: 2,
